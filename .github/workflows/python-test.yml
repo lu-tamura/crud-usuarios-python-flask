@@ -18,10 +18,10 @@ jobs:
         uses: actions/checkout@v3
 
       # Passo 2: Configurar o Python
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.12'  # Ajuste para a versão que você está usando
+        - name: Set up Python
+          uses: actions/setup-python@v4
+          with:
+            python-version: '3.12'  # Ajuste para a versão que você está usando
 
       # Passo 3: Instalar dependências
       - name: Install dependencies
@@ -32,4 +32,4 @@ jobs:
       # Passo 4: Rodar os testes com pytest
       - name: Run tests
         run: |
-          pytest  # Ou você pode especificar um arquivo como ./tests/tests_integracao.py
+          pytest ./tests  # Aponte para o diretório de testes, caso esteja em uma pasta 'tests'
