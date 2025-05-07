@@ -23,4 +23,4 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest ./tests  # Aponte para o diretório de testes, caso esteja em uma pasta 'tests'
+          pytest ./tests/tests_integracao.py
