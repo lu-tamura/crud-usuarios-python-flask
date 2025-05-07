@@ -1,4 +1,4 @@
-from app.main import app, usuarios  
+from app.app import app, usuarios
 
 
 def test_criacao_usuario_valido():
