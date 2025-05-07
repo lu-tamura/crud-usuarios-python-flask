@@ -75,6 +75,7 @@ def test_busca_usuario_inexistente():
 
 
 
+
 def test_exclusao_usuario_existente():
     usuarios.clear()
     app.testing = True
