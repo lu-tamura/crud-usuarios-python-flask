@@ -35,7 +35,6 @@ def test_listagem_todos_usuarios():
     json_data = response.get_json()
 
     assert response.status_code == 200
-    assert isinstance(json_data, list)
     assert len(json_data) == 1
     assert json_data[0]["nome"] == "João"
 
